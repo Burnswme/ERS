@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<h3>Enter your updated information in the fields below.</h3>
+<h3>All fields are required. End of line</h3>
+<div id = "updateForm" class="table table-responsive">
+	<table>
+		<tr>
+			<td>Enter Employee ID</td>
+			<td></td>
+			<td><input type = "text" name = "employeeID" id = "idField" required></td>
+		</tr>
+		<tr>
+			<td>Enter First Name</td>
+			<td></td>		
+			<td><input type = "text" name = "firstName" id = "firstNameField" required></td>
+		</tr>
+		<tr>
+			<td>Enter Last Name</td>
+			<td></td>		
+			<td><input type = "text" name = "lastName" id = "lastNameField" required></td>
+		</tr>
+		<tr>
+			<td>Enter Username:</td>	
+			<td></td>	
+			<td><input type = "text" name = "username" id = "usernameField" required></td>
+		</tr>
+		<tr>
+			<td>Enter Password:</td>
+			<td></td>		
+			<td><input type = "text" name = "password" id = "passwordField" required></td>
+		</tr>
+		<tr>
+			<td>Enter Email Address</td>	
+			<td></td>
+			<td><input type = "text" name = "email" id = "emailField" required></td>
+		</tr>
+		<tr>
+			<button id = "requestBtn" onclick = "sendUpdate()" class="btn btn-warning">Submit</button>
+		</tr>
+	</table>
+</div>

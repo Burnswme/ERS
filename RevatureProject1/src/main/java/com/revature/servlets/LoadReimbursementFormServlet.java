@@ -1,0 +1,24 @@
+package com.revature.servlets;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+@WebServlet("/loadReimbursementForm")
+public class LoadReimbursementFormServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    public LoadReimbursementFormServlet() 
+    {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		request.getRequestDispatcher("features/employeeActions/reimbursementRequestFragment.html").forward(request, response);
+	}
+
+
+}

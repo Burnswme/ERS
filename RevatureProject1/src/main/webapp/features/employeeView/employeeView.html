@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<h3>Log your expenses precisely, and refrain from making unnecessary requests.</h3>
+<h3>All reimbursements must be approved by a manager. End of Line</h3>
+
+<div id = "employeeHome" class="table-responsive">
+
+	    <span id = "acknowledgement">
+		Acknowledged, <span id = "userSpace"></span>.<br>
+		Your current privileges include: <br>
+		</span><br>
+		<table class="table">
+			<tr><td>Submit reimbursement request</td>		   <td><button id = "requestButton" onclick = "loadReimbursementForm()" class = "btn btn-warning btn-sm">Reimbursements</button></td></tr>
+			<tr><td>View pending requests</td>				   <td><button id = "pendingRequests" onclick = "loadPendingTable()" class = "btn btn-warning btn-sm">View Pending</button></td></tr>
+			<tr><td>View resolved requests</td>				   <td><button id = "resolvedRequests" onclick = "loadResolvedTable()" class = "btn btn-warning btn-sm">View Resolved</button></td></tr>
+			<tr><td>View current profile</td>				   <td><button id = "viewProfile" onclick = "loadProfileTable()" class = "btn btn-warning btn-sm">View Profile</button></td></tr>
+			<tr><td>Submit changes to profile information</td> <td><button id = "updateProfile" onclick = "loadUpdateProfile()" class="btn btn-warning btn-sm">Update Profile</button></td></tr>
+		</table>
+	<div id = "actions" class="table"></div>
+</div>
+
+<div id = "employeeActions"><h3>Be aware that use of Encom's server is a privilege, not a right, and can be revoked if abused. End of Line</h3></div>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<h3>Enter the details of your request here. All fields except receipt image are required.</h3>
+<h3>Improper entry of values will result in the request being denied.</h3>
+<h3>End of line</h3>
+<div id = "requestForm">
+	<table>
+		<tr><td>Enter Amount: </td><td><input type = "text"  name = "amount" id = "amountBtn" required></td></tr>
+		<tr><td>Enter Description: </td><td><input type = "text" name = "description" id = "descriptionBtn" required></td></tr>
+		<tr><td>Enter Reimbursement Code:</td><td> <input type = "text" name = "code" id = "codeBtn" required></td></tr>
+		<tr><td>Optional: Submit Receipt Image:</td><td><input id="receiptFile" name="receiptImg" type="file" accept=".jpg,.png,.gif,.bmp, image/jpeg, image/png, image/gif, image/bmp" class="btn btn-warning btn-sm"></td></tr>
+		<tr><td><button id = "requestBtn" onclick = "sendReimbursementRequest()" class="btn btn-warning">Submit</button></td></tr>
+	</table>
+</div>

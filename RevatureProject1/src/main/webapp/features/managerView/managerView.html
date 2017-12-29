@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<h3>Be aware that approval of requests is subject to review by the MCP.</h3>
+<h3>Repeated approval of frivolous requests is grounds for termination.</h3>
+<h3>End of Line</h3>
+
+<div id = "managerHome" class="table-responsive">
+	Acknowledged, <span id = "userSpace"></span>.<br>
+	As a manager, you may: <table class="table">
+							   <tr>
+							   		<td>View all Employees</td>
+							   		<td><button id = "viewEmployees" onclick= "loadViewEmployeesTable()" class="btn btn-warning">View Employees</button></td>
+							   </tr>
+							   <tr>
+							   		<td>View Pending Requests</td>
+							   		<td><button id = "viewPending" onclick= "loadAllPendingRequests()" class="btn btn-warning">View Pending</button></td>
+							   </tr>
+							   <tr>
+							   		<td>View Resolved Requests</td>
+							   		<td><button id = "viewResolved" onclick = "loadResolvedRequests()" class="btn btn-warning">View Resolved</button></td>
+							   </tr>
+							   <tr>
+							   		<td>View Requests by Employee</td>
+							   		<td><button id = "viewByEmployee" onclick = "retrieveRequestsByEmployee()" class="btn btn-warning">View by Employee</button></td>
+							   </tr>
+							   <tr>
+							   		<td>Resolve requests</td>
+							   		<td><button id = "resolveRequests" onclick = "loadResolutionPanel()" class="btn btn-warning">Resolve Requests</button></td>
+							   </tr>
+						   </table>
+</div>
+<div id = "managerActions"></div>
+
